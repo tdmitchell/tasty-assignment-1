@@ -1,0 +1,212 @@
+/* 6. MAKE IT RESPONSIVE */
+/* tablet devices */
+@media (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+  header .wrapper {
+    /* height: 100%; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    align-items: center;
+  }
+
+  .logoContainer {
+    padding-left: 20px;
+  }
+  header .menu {
+    flex-basis: 20%;
+    justify-content: end;
+  }
+
+  header .menu ul {
+    display: none;
+  }
+
+  .headerText {
+    margin-top: 20vh;
+  }
+
+  .hamburgerMenu {
+    /* display: flex; */
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  /* ABOUT SECTION */
+  .about {
+    width: 90%;
+    padding-top: 20px;
+  }
+
+  /* SECONDNAV SECTION */
+  #about,
+  #secondNav {
+    height: 300px;
+  }
+
+  #secondNav ul {
+    padding-top: 35px;
+    flex-direction: column;
+  }
+
+  /* IMAGES CONTAINER SECTION */
+  .gallery ul {
+    /* display: flex; */
+    justify-content: start;
+  }
+
+  .gallery li {
+    flex-basis: 50%;
+    padding: 0;
+  }
+
+  .gallery li:nth-child(3) {
+    display: none;
+  }
+
+  /* COOKINGTIPS and POPULARRECIPES SECTIONS */
+  #cookingTips .wrapper {
+    height: 500px;
+    flex-direction: column;
+  }
+
+  #popularRecipes .wrapper {
+    height: 500px;
+    flex-direction: column-reverse;
+  }
+
+  .cookingTipsTextContainer,
+  .popularRecipesTextContainer {
+    padding: 50px 0;
+  }
+
+  #cookingTips p,
+  #popularRecipes p {
+    width: 80%;
+  }
+
+  /* BLOG SECTION */
+  #blog .wrapper {
+    flex-direction: column;
+    height: 500px;
+    margin: 0;
+    padding-top: 0;
+  }
+
+  .blogImageContainer {
+    width: 100px;
+    margin-bottom: 0;
+  }
+
+  .blogTextContainer {
+    /* margin: 0; */
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .blogTextContainer p,
+  .blogTextContainer h2 {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+
+  /* FOOTER */
+  footer {
+    height: 400px;
+  }
+  footer .wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .stayUpdated {
+    margin: 0 auto;
+  }
+
+  .stayUpdated h3,
+  .stayUpdated h4 {
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  #email {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #submit {
+    width: 86%;
+    margin: 10px auto;
+    border: none;
+    text-align: center;
+  }
+
+  /* .stayUpdated {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }  
+
+  .stayUpdated h4 {
+    font-size: 14px;
+  }
+
+  form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #email {
+    margin: 0 auto;
+    appearance: none;
+    border: none;
+    width: 100%;
+  }
+
+  #submit {
+    border: none;
+    width: 95%;
+
+  }
+
+  #submit:hover {
+    color: #f8f8f8;
+  }
+
+  .blogInfo {
+    margin: 0 auto;
+
+    flex-basis: 90%;
+    flex-direction: column;
+  }
+
+  .blogInfo ul {
+
+    flex-basis: 100px;
+    flex-direction: column;
+  }*/
+
+  .blogInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .blogInfo ul {
+    /* width: 50%; */
+    flex-direction: column;
+  }
+
+  /* .blogInfo ul:nth-child(2) {
+    display: none;
+  } */
+  .blogInfo ul:nth-child(3) {
+    display: none;
+  }
+}

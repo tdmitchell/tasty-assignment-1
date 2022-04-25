@@ -1,0 +1,427 @@
+/* 2. GENERAL STYLES */
+/* 2.1 FONTS */
+/* FONT-FAMILY */
+body,
+.h2Like {
+  font-family: "Cabin", Arial, sans-serif;
+}
+
+.logo,
+.sideLogo,
+.aboutTasty,
+.blogTitle {
+  font-family: "Great Vibes", fantasy;
+}
+
+/* FONT-SIZE */
+html {
+  font-size: 125%;
+}
+
+body,
+.button {
+  font-size: 0.9rem;
+}
+
+.menu {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+
+h2,
+.sideLogo {
+  font-size: 2.1rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+/* body,
+.button {
+  font-size: 18px;
+}
+
+.menu {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 55px;
+}
+
+h2,
+.sideLogo {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
+} */
+
+/* 2.2 IMAGES: Size and not bleed out the container */
+img {
+  max-height: 350px;
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* 2.3 CONTAINERS SIZE */
+.wrapper {
+  max-width: 1260px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  height: 100vh;
+}
+
+#about,
+#blog .wrapper,
+.cookingTipsTextContainer,
+.cookingTipsimageContainer,
+.popularRecipesimageContainer,
+.popularRecipesTextContainer {
+  height: 350px;
+}
+
+/*                                                                              NOT WORKING ???????? */
+#secondNav {
+  height: 150px;
+}
+
+footer,
+footer .wrapper {
+  height: 300px;
+}
+
+/* 2.4 GENERAL STUFF */
+html {
+  color: #232323;
+  background-color: #f8f8f8;
+}
+
+ul,
+li,
+header,
+main,
+footer,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #232323;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.left {
+  margin: auto 0;
+  text-align: left;
+}
+
+/* Buttom */
+.likeButton {
+  /* margin: 140px; */
+  padding: 10px 30px;
+  background-color: #fdc800;
+  display: inline-flex;
+}
+
+.likeButton:hover,
+.likeButton:focus {
+  border: 4px solid #232323;
+}
+
+/* 3. HEADER */
+header {
+  background-image: url(https://psd.hackeryou.com/assignment1-assets/tasty/asset-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sideLogo {
+  text-transform: none;
+  font-weight: normal;
+}
+
+.headerText {
+  margin-top: 30vh;
+}
+
+h2,
+h3,
+.menu,
+.h2Like {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu,
+.logoContainer {
+  flex-basis: 50%;
+  margin-top: 20px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: end;
+}
+
+.logoContainer {
+  text-align: left;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu a:hover,
+.menu a:focus {
+  color: #fdc800;
+}
+
+.h1 {
+  font-weight: normal;
+}
+
+/* 4. MAIN */
+/* 4.1 ABOUT SECTION */
+.aboutTasty {
+  text-transform: none;
+  font-weight: normal;
+}
+
+.cookingTips {
+  width: 50%;
+  /* height: calc(100%-80px); */
+  padding-top: 80px;
+
+  /*                                                              TRYING to use FLEX */
+  /*display: flex;
+  flex-direction: column;
+  justify-content: flex-end; */
+}
+
+/* 4.2 SECOND NAV SECTION */
+#secondNav {
+  background-color: #232323;
+}
+
+#secondNav a {
+  color: #f8f8f8;
+}
+
+.secondNav {
+  margin: 0;
+}
+
+.secondNav ul {
+  padding-top: 50px;
+  /*                                                              TRYING to use FLEX */
+  display: flex;
+  justify-content: center;
+  /*align-items: center; */
+}
+
+.secondNav a {
+  margin-left: 30px;
+}
+
+/* 4.3 IMAGES CONTAINER SECTION */
+.gallery ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.gallery li {
+  flex-basis: 33%;
+  padding: 50px 0;
+}
+
+/* 4.4 COOKING TIPS SECTION */
+/* 4.5 POPULAR RECIPES SECTION */
+#cookingTips,
+#popularRecipes {
+  background-color: #eaedf4;
+}
+
+#cookingTips .wrapper,
+#popularRecipes .wrapper {
+  display: flex;
+}
+
+.cookingTipsTextContainer,
+.cookingTipsimageContainer,
+.popularRecipesimageContainer,
+.popularRecipesTextContainer {
+  flex-basis: 50%;
+  flex-direction: column;
+  padding-top: 120px;
+}
+
+.cookingTipsimageContainer {
+  background-image: url(https://psd.hackeryou.com/assignment1-assets/tasty/asset-5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.popularRecipesimageContainer {
+  background-image: url(https://psd.hackeryou.com/assignment1-assets/tasty/asset-6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#cookingTips p,
+#popularRecipes p {
+  padding: 18px 0;
+  width: 50%;
+  text-align: center;
+}
+/*                                                                              WHY need the    img     ??????? */
+.popularRecipesimageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 4.6 BLOG SECTION */
+#blog .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blogImageContainer {
+  flex-basis: 20%;
+}
+
+.blogTextContainer {
+  flex-basis: 80%;
+  padding: 30px 0 20px 50px;
+}
+
+.blogTextContainer p {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 90%;
+  text-align: left;
+}
+
+#blog img {
+  border-radius: 50%;
+  padding: 50px 0;
+}
+
+.blogTitle {
+  text-transform: none;
+  font-weight: normal;
+}
+
+/* 5. FOOTER */
+footer {
+  background-color: #232323;
+}
+
+footer a,
+footer h3,
+footer h4,
+footer li {
+  color: #f8f8f8;
+  margin: 0;
+  text-align: left;
+  font-weight: normal;
+}
+
+footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blogInfo {
+  flex-basis: 55%;
+}
+
+.stayUpdated {
+  flex-basis: 45%;
+  justify-content: flex-start;
+}
+
+.blogInfo {
+  display: flex;
+}
+
+/* .blogInfo ul {
+  flex-basis: 32%;
+} */
+
+.blogInfo ul:first-child {
+  flex-basis: 35%;
+}
+
+.blogInfo ul:nth-child(2) {
+  flex-basis: 20%;
+}
+
+.blogInfo ul:last-child {
+  flex-basis: 45%;
+}
+
+input {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+/* 6. MAKE IT RESPONSIVE */
+/* tablet devices */
+@media (max-width: 768px) {
+  header .wrapper {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+
+  /* nav li:first-child {
+    margin: 0 0 20px 0;
+  } */
+
+  footer .wrapper {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

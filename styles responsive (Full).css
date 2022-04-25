@@ -1,0 +1,106 @@
+/* 6. MAKE IT RESPONSIVE */
+/* tablet devices */
+@media (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+  header .wrapper {
+    /* height: 100%; */
+    /* flex-direction: column; */
+    justify-content: space-between;
+  }
+
+  header .menu ul {
+    display: none;
+  }
+
+  .headerText {
+    margin-top: 20vh;
+  }
+
+  /* SECONDNAV SECTION */
+  #secondNav,
+  #secondNav .wrapper {
+    height: 400px;
+  }
+
+  #secondNav ul {
+    /* margin: 0; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  #secondNav a {
+    color: red;
+  }
+
+  /* ABOUT and SECONDNAV SECTIONS */
+  .about,
+  .secondNav {
+    width: 70%;
+    padding-top: 30px;
+  }
+
+  /* ABOUT, SECONDNAV, COOKINGTIPS and POPULARRECIPES SECTIONS */
+  #cookingTips .wrapper,
+  #popularRecipes .wrapper,
+  #about .wrapper,
+  #secondNav .wrapper,
+  nav ul {
+    flex-direction: column;
+    height: 600px;
+  }
+
+  /* COOKINGTIPS and POPULARRECIPES SECTIONS */
+  .cookingTipsTextContainer,
+  .popularRecipesTextContainer,
+  .cookingTipsimageContainer,
+  .popularRecipesimageContainer {
+    padding-top: 30px;
+  }
+
+  /* POPULARRECIPES SECTION */
+  #popularRecipes .wrapper {
+    flex-direction: column-reverse;
+    height: 600px;
+  }
+
+  /* BLOG SECTION */
+  #blog .wrapper {
+    flex-direction: column;
+    height: 650px;
+    margin: 0;
+  }
+
+  .blogImageContainer {
+    width: 40%;
+    margin-bottom: 0;
+  }
+
+  .blogTextContainer,
+  .blogTitle {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .blogTextContainer h2 {
+    margin-top: -30px;
+    margin-left: -30px;
+    /* padding: 0 0 0 10px; */
+  }
+
+  .blogTextContainer p {
+    margin-left: -10px;
+    /* padding: 0 0 0 10px; */
+  }
+
+  /* FOOTER  SECTION */
+  footer .wrapper {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
